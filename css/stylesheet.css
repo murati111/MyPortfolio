@@ -1,0 +1,25 @@
+body,html{
+    font-family: 'Open Sans', sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+    color: #656c6d;
+	width: 100% !important;
+	height: 100% !important;
+}
+h1{
+    font-weight: 700;
+}
+
+h2{
+    line-height:20px;
+    margin:0;
+    color:#121d1f;
+    font-weight:400;
+    margin-bottom: 30px;
+    font-size:34px;
+}
+h3,h4{
+    color: #121d1f;
+    font-size:20px;
+    font-weight:600;
+}
