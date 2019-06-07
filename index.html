@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>murati is</title>
+
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
@@ -17,12 +18,14 @@
 <body data-spy="scroll" data-target="#NAVBAR-NAME">
     <!--Header-->
     <header id="header">
-        <div class="container">
-            <h1>Hello,I'm
-                <span class="name">Murati</span>
-            </h1>
-            <p>I'm a VR Game Developer.</p>
-            <a href="#about" class="btn-default btn-lg page-scroll">Learn More</a>
+        <div class="intro">
+            <div class="container">
+                <h1>Hello,I'm
+                    <span class="name">Murati</span>
+                </h1>
+                <p>I'm a VR Game Developer.</p>
+                <a href="#about" class="btn-default btn-lg page-scroll">Learn More</a>
+            </div>
         </div>
     </header>
 
@@ -33,11 +36,14 @@
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                         <i class="fa fa-bars"></i>
-                        <a class ="navbar-brand page-scroll" href="#page-top">Murati</a>
                     </button>
+                    <a class ="navbar-brand page-scroll" href="#page-top">Murati</a>
                 </div>
                 <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                     <ul class="nav navbar-nav">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
                         <li><a class="page-scroll" href="#about">About</a></li>
                         <li><a class="page-scroll" href="#skill">Skill</a></li>
                         <li><a class="page-scroll" href="#works">Works</a></li>
@@ -69,46 +75,45 @@
     </div>
 
     <!--Skill-->
-    <div id="skill"></div>
+    <div id="skills" class="text-center">
         <div class="container">
             <div class="section-title text-center center">
-                <h2>Skills</h2>
-                <hr>
+                    <h2>Skills</h2>
+                    <hr>
             </div>
             <div class="row">
-                <div class="proggraming">
-                    <div class="col md-4 sm-6 skill">
+                    <div class="col-md-4 col-sm-6 skill">
                         <h3>Unreal Engine4</h3>
                         <img src="img/UnrealEngine4.png" alt="Unreal Engine4" class="skill-img">
                     </div>
-                    <div class="col md-4 sm-6 skill">
-                            <h3>C・C++</h3>
-                            <img src="img/cpp.png" alt="C++" class="skill-img">
+                    <div class="col-md-4 col-sm-6 skill">
+                        <h3>C・C++</h3>
+                        <img src="img/cpp.png" alt="C++" class="skill-img">
                     </div>
-                    <div class="col md-4 sm-6 skill">
-                            <h3>Unity</h3>
-                            <img src="img/Unity.png" alt="Unity" class="skill-img">
+                    <div class="col-md-4 col-sm-6 skill">
+                        <h3>Unity</h3>
+                        <img src="img/Unity.png" alt="Unity" class="skill-img">
                     </div>
-                    <div class="col md-4 sm-6 skill">
-                            <h3>Java</h3>
-                            <img src="img/Java.png" alt="Java" class="skill-img">
+                    <div class="col-md-4 col-sm-6 skill">
+                        <h3>Java</h3>
+                        <img src="img/Java.png" alt="Java" class="skill-img">
                     </div>
-                    <div class="col md-4 sm-6 skill">
-                            <h3>HTML</h3>
-                            <img src="img/HTML.png" alt="HTML" class="skill-img">
+                    <div class="col-md-4 col-sm-6 skill">
+                        <h3>HTML</h3>
+                        <img src="img/HTML.png" alt="HTML" class="skill-img">
                     </div>
-                    <div class="col md-4 sm-6 skill">
-                            <h3>CSS</h3>
-                            <img src="img/CSS.png" alt="CSS" class="skill-img">
+                    <div class="col-md-4 col-sm-6 skill">
+                        <h3>CSS</h3>
+                        <img src="img/CSS.png" alt="CSS" class="skill-img">
                     </div>
-                    <div class="col md-4 sm-6 skill">
-                            <h3>JavaScript</h3>
-                            <img src="img/JavaScript.png" alt="JavaScript" class="skill-img">
+                    <div class="col-md-4 col-sm-6 skill">
+                        <h3>JavaScript</h3>
+                        <img src="img/JavaScript.png" alt="JavaScript" class="skill-img">
                     </div>
-                    <div class="col md-4 sm-6 skill">
-                            <h3>PlayCanvas</h3>
-                            <img src="img/PlayCanvas.png" alt="PlayCanvas" class="skill-img">
-                </div>
+                    <div class="col-md-4 col-sm-6 skill">
+                        <h3>PlayCanvas</h3>
+                        <img src="img/PlayCanvas.png" alt="PlayCanvas" class="skill-img">
+                    </div>
             </div>
         </div>
     </div>
@@ -141,7 +146,7 @@
     <!--Contact-->
     <div id="contact">
         <div class="container">
-            <div class="section-title center">
+            <div class="section-title text-center center">
                 <h2>Contact</h2>
                 <hr>
             </div>
@@ -160,13 +165,14 @@
     </div>
 
     <!--Fotter-->
-    <div id="fotter">
+    <div id="footer">
         <div class="container text-center">
-            <p>
-                ©2019 Daisuke Murakami.
-            </p>
+            <div class="fnav">
+                <p>
+                    ©2019 Daisuke Murakami.
+                </p>
+            </div>
         </div>
-
     </div>
 </body>
 </html>
