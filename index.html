@@ -3,28 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>murati is</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-    <!--jQuery-->
+    <!--jQuery
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!--BootstrapのJS読み込み-->
-    <script src="js/bootstrap.min.js"></script>
+    BootstrapのJS読み込み
+    <script src="js/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
 </head>
-<body data-spy="scroll" data-target="#NAVBAR-NAME">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fi">
     <!--Header-->
     <header id="header">
         <div class="intro">
             <div class="container">
-                <h1>Hello,I'm
-                    <span class="name">Murati</span>
-                </h1>
-                <p>I'm a VR Game Developer.</p>
-                <a href="#about" class="btn-default btn-lg page-scroll">Learn More</a>
+                    <div class="row">
+                        <div class="intro-text">
+                        <h1>Hello,I'm
+                            <span class="name">Murati</span>
+                        </h1>
+                        <p>I'm a VR Game Developer.</p>
+                        <a href="#about" class="btn btn-default btn-lg page-scroll">Learn More</a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -112,7 +116,7 @@
                     </div>
                     <div class="col-md-4 col-sm-6 skill">
                         <h3>PlayCanvas</h3>
-                        <img src="img/PlayCanvas.png" alt="PlayCanvas" class="skill-img">
+                        <img src="img/PlayCanvas.png" alt="PlayCanvas" class="skill-img skill-img-playcanvas">
                     </div>
             </div>
         </div>
@@ -138,7 +142,13 @@
                 <div class="clearfix"></div>
             </div>
             <div class="row">
-                <div class="works-items"></div>
+                <div class="works-items">
+                    <div class="col-sm-6 col-md-3 col-lg-3 web">
+                        <div class="works-item">
+                            <div class="hover-bg"><a href="img/works/YozakuraWizard.png" title="これは夜桜ウィザード"></a></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -153,11 +163,11 @@
             <div class="col-md-8 col-md-offset-2">
                 <div class="social">
                     <ul>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-github"></i></a></li>
-                        <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i><a href="#" class="hover-text">facebook</a></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i><a href="#" class="hover-text">twitter</a></a></li>
+                        <li><a href="#"><i class="fa fa-github"></i><a href="#" class="hover-text">github</a></a></li>
+                        <li><a href="#"><i class="fa fa-envelope"></i><a href="#" class="hover-text">mail</a></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i><a href="#" class="hover-text">linkedin</a></a></li>
                     </ul>
                 </div>
             </div>
@@ -174,5 +184,15 @@
             </div>
         </div>
     </div>
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/easypiechart.js"></script> 
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="js/jquery.counterup.js"></script> 
+<script type="text/javascript" src="js/waypoints.js"></script> 
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+
 </body>
 </html>
