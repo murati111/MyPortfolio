@@ -165,7 +165,7 @@ hr{
     color:#fff;
     background:url(../img/intro-bg.jpg) no-repeat center top;
     background-color:#7bc3d1;
-     -webkit-background-size:cover;
+    -webkit-background-size:cover;
     -moz-background-size:cover;
     background-size:cover;
    -o-background-size:cover;
@@ -215,6 +215,10 @@ hr{
     display: inline-block;
     margin-bottom:26px;
     text-align:center;
+}
+.skill-img-playcanvas{
+    width:220px;
+    height:220px;
 }
 
 /*Contact*/
@@ -286,7 +290,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 /* Media Queries */
 @media(min-width:768px) {
     .intro {
-        height: 100%;
+        height: 100vh;
         padding: 0;
         text-align: left;
         color: #fff;
@@ -312,7 +316,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
         padding: 120px 0;
     }
     header .intro-text {
-        padding-top: 300px;
+        padding-top: 400px;
         padding-bottom: 200px;
     }
     .timeline:before {
@@ -344,7 +348,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
         padding: 0 30px 20px 20px;
         text-align: left;
     }
-    }
+}
     
     @media(min-width:992px) {
     #here-me h1 {
