@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +11,43 @@
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
     <!--BootstrapのJS読み込み-->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <script>
+        if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+    $(function(){
+        var body = document.body;
+        var cursor = document.createElement("div");
+        var stalker = document.createElement("div");
+        cursor.id = "cursor";
+        stalker.id = "stalker";
+        body.appendChild(cursor);
+        body.appendChild(stalker);
+        body.addEventListener("mousemove", function(e) {
+              cursor.style.left = e.clientX + "px";
+              cursor.style.top = e.clientY + "px";
+              stalker.style.left = e.clientX + "px";
+              stalker.style.top = e.clientY + "px";
+        }, false);
+ 
+        $("a").on("mouseenter", function() {
+            $('#cursor').addClass("active");
+            $('#stalker').addClass("active");
+        });
+ 
+        $("a").on("mouseleave", function() {
+            $('#cursor').removeClass("active");
+            $('#stalker').removeClass("active");
+        });
+    });
+}
+    </script>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fi">
+    <script>
+    </script>
     <!--Header-->
     <header id="header">
         <div class="intro">
@@ -133,9 +164,9 @@
                         <li>
                             <ol class="type">
                                 <li><a href="#" data-filter="*" class="active">All</a></li>
-                                <li><a href="#" data-filter="*" class="active">VR</a></li>
-                                <li><a href="#" data-filter="*" class="active">Game</a></li>
-                                <li><a href="#" data-filter="*" class="active">OtherApp</a></li>
+                                <li><a href="#" data-filter=".vr" class="active">VR</a></li>
+                                <li><a href="#" data-filter=".game" class="active">Game</a></li>
+                                <li><a href="#" data-filter=".other" class="active">OtherApp</a></li>
                             </ol>
                         </li>
                     </ul>
@@ -146,7 +177,12 @@
                 <div class="works-items">
                     <div class="col-sm-6 col-md-3 col-lg-3 web">
                         <div class="works-item">
-                            <div class="hover-bg"><a href="img/works/YozakuraWizard.png" title="これは夜桜ウィザード"></a></div>
+                            <div class="hover-bg"><a href="img/works/YozakuraWizard.png" title="これは夜桜ウィザード" rel="prettyPhoto"></a></div>
+                                <div class="hover-text">
+                                    <h4>夜桜ウィザード</h4>
+                                    <small>VR Game</small>
+                                    <img src="img/works/YozakuraWizard.png" class="img-responsive" alt="夜桜ウィザード">
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -164,11 +200,11 @@
             <div class="col-md-8 col-md-offset-2">
                 <div class="social">
                     <ul>
-                        <li><a href="#"><i class="fa fa-facebook"></i><a href="#" class="hover-text">facebook</a></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i><a href="#" class="hover-text">twitter</a></a></li>
-                        <li><a href="#"><i class="fa fa-github"></i><a href="#" class="hover-text">github</a></a></li>
-                        <li><a href="#"><i class="fa fa-envelope"></i><a href="#" class="hover-text">mail</a></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i><a href="#" class="hover-text">linkedin</a></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i><a href="#" class="hover-text socialtext">facebook</a></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i><a href="#" class="hover-text socialtext">twitter</a></a></li>
+                        <li><a href="#"><i class="fa fa-github"></i><a href="#" class="hover-text socialtext">github</a></a></li>
+                        <li><a href="#"><i class="fa fa-envelope"></i><a href="#" class="hover-text socialtext">mail</a></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i><a href="#" class="hover-text socialtext">linkedin</a></a></li>
                     </ul>
                 </div>
             </div>
