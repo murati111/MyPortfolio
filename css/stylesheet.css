@@ -6,7 +6,7 @@ body,html{
 	width: 100% !important;
     height: 100% !important;
 }
-#cursor {
+/*#cursor {
     position: fixed;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -36,7 +36,7 @@ body,html{
  
 #stalker.active {
     transform: scale(3);
-}
+}*/
 
 
 h1{
@@ -196,7 +196,7 @@ hr{
     padding:100px 0;
     text-align:center;
     color:#fff;
-    background :url(../img/MIYADSC_2676.jpg) no-repeat center top;
+    background: url(../img/MIYADSC_2676.jpg) center center/cover no-repeat;
     background-color:#7bc3d1;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -255,7 +255,7 @@ hr{
 }
 
 /*Works*/
-#portfolio{
+#works{
     padding:80px 0;
     background: #ffffff;
     background: -moz-linear-gradient(top, #ffffff 0%, #f4f5f6 49%, #ffffff 100%); /* FF3.6+ */
@@ -263,8 +263,8 @@ hr{
 	background: -webkit-linear-gradient(top, #ffffff 0%, #f4f5f6 49%, #ffffff 100%); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(top, #ffffff 0%, #f4f5f6 49%, #ffffff 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #ffffff 0%, #f4f5f6 49%, #ffffff 100%); /* IE10+ */
-	background: linear-gradient(to bottom, #ffffff 0%, #f4f5f6 49%, #ffffff 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(to bottom, #ffffff 0%, #f4f5f6 49%, #ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); /* IE6-9 */
 }
 .categories{
     padding-bottom:30px;
@@ -381,7 +381,7 @@ ol.type li a:hover{
 .hover-bg:hover .hover-text {
 	opacity: 1;
 }
-#portfolio i.fa {
+#works i.fa {
 	font-size: 20px;
 	padding: 5px;
 	color: #E87E04;
@@ -471,7 +471,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     .intro {
         height: 100vh;
         padding: 0;
-        text-align: left;
+        text-align: center;
         color: #fff;
     }
     .intro H1 {
@@ -483,7 +483,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
         font-weight: 600;
     }
     .intro .intro-text {
-        max-width: 75%;
+        /*max-width: 75%;*/
     }
     .intro .intro-text p {
         font-family: 'Lato', sans-serif;
@@ -495,7 +495,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
         padding: 120px 0;
     }
     header .intro-text {
-        padding-top: 400px;
+        padding-top: 100px;
         padding-bottom: 200px;
     }
     .timeline:before {
