@@ -6,6 +6,9 @@ body,html{
 	width: 100% !important;
     height: 100% !important;
 }
+.pace-running .wrap{
+    display: none;
+}
 /*#cursor {
     position: fixed;
     -webkit-transform: translate(-50%, -50%);
