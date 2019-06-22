@@ -6,9 +6,9 @@ body,html{
 	width: 100% !important;
     height: 100% !important;
 }
-.pace-running .wrap{
+/*.pace-running .wrap{
     display: none;
-}
+}*/
 /*#cursor {
     position: fixed;
     -webkit-transform: translate(-50%, -50%);
@@ -383,6 +383,19 @@ ol.type li a:hover{
 }
 .hover-bg:hover .hover-text {
 	opacity: 1;
+}
+
+
+.works-item{
+    background-color: #E2E2E2;
+    margin:auto; 
+}
+.img-parent{
+    display:table;
+}
+.img-parent img{
+    display:table-cell;
+    padding-top: 25%;
 }
 #works i.fa {
 	font-size: 20px;
