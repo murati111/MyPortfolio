@@ -17,12 +17,23 @@ function main() {
             }
           });
           
-          $('.intro').ripples({
+          $(function () {
+            var ua = navigator.userAgent;
+            if (ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) {
+                // スマートフォン用コード
+            } else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
+                // タブレット用コード
+            } else {
+                // PC用コード 
+            $('.intro').ripples({
             resolution: 500,
             dropRadius: 20,
             perturbance: 0.01,
             interactive:true
         });
+            }
+        })
+         
         // affix the navbar after scroll below header
     $('#nav').affix({
           offset: {
